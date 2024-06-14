@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Odyssey by Yashika Jain</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            background-color: rgb(243, 12, 154);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(56, 3, 51);
+            font-size: 1.3rem;
+        }
+
+        main hr {
+            border: 0;
+            background-color: rgb(243, 12, 154);
+            height: 1.2px;
+            margin: 40px 60px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 80px 0;
+        }
+
+        .firstSection>div {
+            width: 35%;
+        }
+
+        .leftSection {
+            font-size: 3.0rem;
+            margin-right: 120px; 
+            margin-left: 120px;
+            margin-top: -10px;
+            
+        }
+
+        .rightSection {
+            margin-left: 100px; 
+        }
+
+        .rightSection img {
+            margin: 80px 0;
+            width: 300px;
+        }
+        .image-top{
+            width: 200px;
+        }
+
+        .purple {
+            color: rgb(243, 12, 154);
+        }
+
+        .text-lavander {
+            color: rgb(153, 0, 255);
+        }
+
+        #element {
+            color: rgb(243, 12, 154);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection {
+            font-size: 1.5rem;
+        }
+
+        
+
+        .vertical-title {
+            margin-bottom: 20px;
+        }
+
+        .vertical-desc {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            font-style: italic; 
+        }
+
+        .vertical-desc p {
+            margin-bottom: 10px;
+        }
+
+        .vertical-desc ul {
+            list-style-type: disc;
+        }
+
+        .licksters {
+            font-size: 2rem;
+        }
+
+        .licksters span {
+            font-weight: bold;
+        }
+
+        
+        .licksters .L {
+            color: #4cd450; 
+        }
+
+        .licksters .I {
+            color: #4cd450; 
+        }
+
+        .licksters .C {
+            color: #4cd450; 
+        }
+
+        .licksters .K {
+            color: #4cd450;
+        }
+
+        .licksters .S {
+            color: #4cd450; 
+        }
+
+        .licksters .T {
+            color: #4cd450; 
+        }
+
+        .licksters .E {
+            color: #4cd450; 
+        }
+
+        .licksters .R {
+            color: #4cd450; 
+        }
+
+        
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        
+        .button.resume {
+            background-color: #d543ec; 
+            color: white;
+            border: 2px;
+            border-radius: 3px;
+            font-size: 20px;
+        }
+
+        
+        .button.linkedin {
+            background-color: #577BFF; 
+            color: white;
+            border: 2px;
+            border-radius: 3px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Digital Odyssey by Yashika Jain</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li onmouseover="showContactOptions()">
+                        <a href="#">Contact Me</a>
+                        <ul id="contactOptions" style="display: none;">
+                            <li>Email</li>
+                            <li>Phone</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <span class="purple">Yashika Jain,</span>
+                <div>a fervent navigator of the digital frontier,</div>
+                <div>merges the roles of </div>
+
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="file:///C:/Users/YATHARTH/Downloads/yashika_updated_resume.pdf" class="button resume">Resume</a>
+                    <a href="https://www.linkedin.com/in/yashika-jain-67933b254/" class="button linkedin">LinkedIn</a>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img class="yashika" src="yashika.jpeg" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <h1>Work Experience</h1>
+            <div class="box"></div>
+            <img class="image-top" src="developer.png" alt="">
+            <div class="vertical-title">
+                Social Media Marketing Intern
+                At <span class="licksters"><span class="L">L</span><span class="I">I</span><span class="C">C</span><span class="K">K</span><span class="S">S</span><span class="T">T</span><span class="E">E</span><span class="R">R</span><span class="S">S</span> (June2023-August2023)
+            </div>
+            <div class="vertical-desc">
+                <ul>
+                    <li>Orchestrated compelling social media campaigns across Instagram amplifying brand visibility and engagement.</li>
+                    <li>Collaborated closely with the marketing team to conceptualize and execute innovative digital initiatives, resulting in a notable upsurge in followership and engagement metrics for Licksters.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <div id="email" style="display: none;">yashika2004@gmail.com</div>
+    <div id="phone" style="display: none;">8767961603</div>
+    <script>
+        function toggleContactOption(option) {
+            var email = document.getElementById("email");
+            var phone = document.getElementById("phone");
+
+            if (option === 'email') {
+                email.style.display = "block";
+                phone.style.display = "none";
+            } else if (option === 'phone') {
+                email.style.display = "none";
+                phone.style.display = "block";
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: [' Web Architect', 'Web Designer'],
+            typeSpeed: 50,
+        });
+
+        function showContactOptions() {
+            document.getElementById("contactOptions").style.display = "block";
+        }
+    </script>
+</body>
+</html>
